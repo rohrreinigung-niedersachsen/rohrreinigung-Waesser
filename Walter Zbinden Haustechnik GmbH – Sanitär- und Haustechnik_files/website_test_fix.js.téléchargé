@@ -1,0 +1,9 @@
+if(window.location.href.includes('bricopiu')) {
+    setTimeout(function(){
+        jQuery("#navpro-topnav").find(".level-top").on("click", function(){
+            if (jQuery(this).attr("href") && jQuery(this).attr("href") != undefined) {
+                window.location = jQuery(this).attr("href");
+            }
+        });
+    },500);
+}
